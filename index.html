@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do List</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;1,500&family=Montserrat:ital,wght@0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+
+	<header>
+		<div id='logo-container'>
+			<span>TAREAS</span>
+		</div>
+		<div id='container-features'>
+			<div>
+				<a class='features-icons'>
+					<img src='./img/search-line.png'>
+					<input type='text' placeholder='Busca alguna tarea'>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<div id='container'>
+		<div class='empty-cells'>
+			<span>¡Llena todos los campos antes de guardar!
+		</div>
+		<div class='empty-cells green-cells'>
+			<span>¡Guardado exitoso!</span>
+		</div>
+		<div id='menu-column'>
+			<div class='columns'>
+				<div class='my-tasks'>
+					<a id='my-task'>
+						<img src='./img/my-task.png'>
+						Mis tareas
+					</a>
+				</div>
+			</div>
+			<div class='columns'>
+				<div class='my-tasks'>
+					<a id='edit-task'>
+						<img src='./img/edit-task.png'>
+						Editar tareas
+					</a>
+				</div>
+			</div>
+			<div class='columns'>
+				<div class='my-tasks'>
+					<a id='remove-task'>
+						<img src='./img/delete-task.png'>
+						Borrar tareas
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div id='tasks-container'>
+			<div class='task-box'>
+				<div class='task-add'>
+					<div class='task-add-center'>
+						<img src=./img/plus-round-line.png>
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript" src='./app.js'></script>
+</body>
+</html>

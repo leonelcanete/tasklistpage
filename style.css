@@ -1,0 +1,420 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+
+}
+
+body{
+	height:100vh;
+	background-color:rgba(201, 214, 223, 0.56);
+}
+
+
+header{
+	width:100%;
+	height:45px;
+	background-color: white;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+    -webkit-box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.15);
+}
+
+#logo-container{
+	margin-left:20px;
+	font-family:Montserrat;
+	font-size: 20px;
+	color:rgba(117, 117, 117, .8);
+
+}
+
+#container-features{
+	width:200px;
+	margin-right:50px;
+	font-family:Montserrat;
+	font-size:10px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+
+}
+
+#container-features img{
+	margin-right:5px;
+	width:20px;
+	height:20px;
+}
+
+#menu-column{
+	height:90vh;
+	display:flex;
+	flex-direction: column;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+}
+
+#container{
+	display:flex;
+	width:100%;
+	height:100%;
+}
+
+#tasks-container{
+	display:flex;
+	flex-wrap:wrap;
+	margin-right:20px;
+	margin-top:20px;
+	margin-left:40px;
+	width:100%;
+}
+
+#my-task{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+
+#edit-task{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#remove-task{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+}
+
+.empty-cells{
+	display:none;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	font-family: Montserrat;
+	font-size:12px;
+	position:fixed;
+	width:300px;
+	height:40px;
+	background-color:red;
+	border-style:solid;
+	border-width: 1px;
+	border-color:white;
+	right:0;
+	top:70px;
+	z-index:9999;
+}
+
+.green-cells{
+	background-color:green;
+}
+
+.features-icons{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.features-icons input{
+	font-family:Montserrat;
+	font-size:15px;
+	border-style:none;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.columns{
+	width:150px;
+	height:100%;
+	background-color: white;
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+	border-bottom-width:1px;
+}
+
+.columns:hover{
+	cursor:pointer;
+	background-color:rgba(0, 146, 202, .5);
+}
+
+.my-tasks{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-family:Montserrat;
+	font-size:15px;
+}
+
+.my-tasks img{
+	margin-bottom:10px;
+	width:25px;
+	height:30px;
+}
+.task-box{
+	position:relative;
+	background-color:white;
+	margin-left:25px;
+	margin-bottom:20px;
+	width:40%;
+	height:40%;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+}
+
+.task-add{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.task-add-center{
+	width:150px;
+	height:150px;
+	background-color:rgba(33, 33, 33, .1);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5%;
+}
+
+.task-add-center:hover{
+	cursor:pointer;
+	transform: scale(1.2);
+}
+
+
+.task-add img{
+	opacity:30%;
+	width:100px;
+	height:100px;
+}
+
+.task-add img:hover{
+	cursor:pointer;
+	transform: scale(1.2);
+}
+
+.task-title{
+	font-family: 'Montserrat';
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	width:100%;
+	height:20%;
+	border-bottom-style:solid;
+	border-bottom-color:grey;
+	border-bottom-width:1px;
+
+}
+
+.task-title input{
+	font-family: 'Montserrat Alternates';
+	margin-left:15px;
+	font-size:15px;
+	width:80%;
+	height:60%;
+	border-style:none;
+}
+
+.title{
+	font-family: 'Montserrat Alternates';
+	margin-left:15px;
+	font-size:20px;
+	width:80%;
+	height:60%;
+}
+
+.task-title img{
+	opacity:70%;
+	margin-right: 15px;
+	width:20px;
+	height:5px;
+}
+
+.edit-pen img{
+	position:absolute;
+	left: -15px;
+	top:-15px;
+	width:30px;
+	height:30px;
+}
+
+.edit-pen img:hover{
+	cursor:pointer;
+	transform:scale(1.5);
+}
+
+.task-content{
+	font-family:'Montserrat';
+	font-size:20px;
+	margin-top:0px;
+	padding-bottom:50px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width:100%;
+	height:60%;
+}
+
+.task-content img{
+	height:25px;
+	width:25px;
+}
+
+.content-task{
+	text-align: center;
+	font-family:'Montserrat';
+	font-size:15px;
+	width:25%;
+	height:30%;
+	border-style:none;
+}
+
+.status-circle{
+	margin-left:25px;
+}
+
+.commentary-arrow{
+	opacity:50%;
+}
+
+.commentary-arrow:hover{
+	cursor:pointer;
+	transform: scale(1.2);
+}
+
+.status{
+	position:relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:18px;
+	margin-right:15px;
+	border-radius:20px;
+	border-style:solid;
+	border-color:grey;
+	width:130px;
+	height:35px;
+}
+
+.status:hover{
+	cursor:pointer;
+	background-color: grey;
+	color:white;
+}
+
+.edit-status{
+	display:none;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	position:absolute;
+	background-color:white;
+	border-radius:20px;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+	width:100%;
+	height:150px;
+	right:-130px;
+	z-index: 999;
+}
+
+.edit-status span{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	border-radius:20px;
+	border-style:solid;
+	border-width: 2px;
+	width:115px;
+	height:35px;
+}
+
+
+.status-completed{
+	border-color:green;
+	color:green;
+}
+
+.status-completed:hover{
+	cursor:pointer;
+	color:white;
+	background-color:green;
+}
+
+.status-urgent{
+	border-color:red;
+	color:red;
+}
+
+.status-urgent:hover{
+	cursor:pointer;
+	color:white;
+	background-color:red;
+}
+
+.status-in-progress{
+	border-color:blue;
+	color:blue;
+}
+
+.status-in-progress:hover{
+	cursor:pointer;
+	color:white;
+	background-color: blue;
+}
+.commentary-content{
+	font-size:15px;
+	position:absolute;
+	bottom:30px;
+	left:20%;
+	width:70%;
+	height:40%;
+}
+
+.due-to-task{
+	margin-top:10px;
+	position:relative;
+	width:100%;
+	height:10%;
+}
+
+.save-button{
+	position:absolute;
+	right:20px;
+	font-family:Montserrat;
+	font-size:15px;
+	height:30px;
+	width:100px;
+	color:white;
+	border-width: 1px;
+	background-color:rgba(0, 146, 202, .5);
+}
+
+.save-button:hover{
+	cursor:pointer;
+	transform:scale(1.1);
+}
+
+.delete{
+	left:20px;
+}
